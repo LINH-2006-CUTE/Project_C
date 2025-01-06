@@ -769,18 +769,27 @@ int main(){
                                 showMenuStudent();
                                 scanf("%d", &studentChoice);
                                 switch (studentChoice){
-                                    case 1: showSv(); 
+                                    case 1:{
+                                    	showSv(); 
 									break;
-                                    case 2: addSv(); 
+									} 
+                                    case 2:{
+                                    	addSv(); 
 									break;
-                                    case 3: editSv(); 
+									} 
+                                    case 3: {
+                                    	editSv(); 
 									break;
-                                    case 4: deleteSv(); 
+									}
+                                    case 4:{
+                                    	deleteSv(); 
 									break;
+									} 
                                     case 5: {
                                         printf("1. Sap xep theo ID\n");
                                         printf("2. Sap xep theo ten\n");
                                         printf("Nhap lua chon: ");
+                                        
                                         int sortChoice;
                                         scanf("%d", &sortChoice);
                                         if (sortChoice == 1) sortSvID();
